@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/APU BC (2).png" type="image/x-icon">
+    <link rel="stylesheet" href="analytics.css">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <title>APUBC | Analytics</title>
+</head>
+
+<menu class="menu-con">
+    <a class="user" href="index.html" onmouseover="changeImage('images/APU BC (7).png')" onmouseout="changeImage('images/APU BC (2).png')">
+        <img class="userimg" src="images/APU BC (2).png" alt="">
+        APUBC
+    </a>
+    <a class="menu" onclick="toggleSubmenu()" >EXPLORE</a>
+    <a class="menu" href="index.html#about"><ion-icon name="radio-button-on-outline"></ion-icon>ABOUT US</a>
+    <div class="submenu" id="exploreSubmenu">
+        <a class="sub" href="products.html">
+            Products |
+        </a>
+        <a class="sub" href="trainings.html">
+            Trainings |
+        </a>
+        <a class="sub" href="activities.html">
+            Activities |
+        </a>
+        <a class="sub" href="annualdinner.html">
+            Annual Dinner
+        </a>
+        </div>
+</menu>
+
+<body>
+
+            <div class="grid-container">          
+                <!-- Main -->
+                <main class="main-container">
+                  <div class="main-title">
+                    <h2 class="dash">DASHBOARD</h2>
+                  </div>
+          
+                  <div class="main-cards">
+          
+                    <div class="cardd">
+                      <div class="card-inner">
+                        <h3>PRODUCTS</h3>
+                        <span class="material-icons-outlined">inventory_2</span>
+                      </div>
+                      <h1>4</h1>
+                    </div>
+          
+                    <div class="cardd">
+                      <div class="card-inner">
+                        <h3>CATEGORIES</h3>
+                        <span class="material-icons-outlined">category</span>
+                      </div>
+                      <h1>2</h1>
+                    </div>
+          
+                    <div class="cardd">
+                      <div class="card-inner">
+                        <h3>CUSTOMERS</h3>
+                        <span class="material-icons-outlined">groups</span>
+                      </div>
+                      <h1>150</h1>
+                    </div>
+          
+                    <div class="cardd">
+                      <div class="card-inner">
+                        <h3>ALERTS</h3>
+                        <span class="material-icons-outlined">notification_important</span>
+                      </div>
+                      <h1>5</h1>
+                    </div>
+          
+                  </div>
+          
+                  <div class="charts">
+          
+                    <div class="charts-card">
+                      <h2 class="chart-title">Top 5 Wins</h2>
+                      <div id="bar-chart"></div>
+
+                    <div class="charts-card">
+                      <h2 class="chart-title">Average Student Registers</h2>
+                      <div id="area-chart"></div>
+                    </div>
+          
+                  </div>
+                </main>
+                <!-- End Main -->
+              </div>
+    
+
+<section class="activities">
+    <footer class="foot">
+        <section class="more4">
+                APUBC'S OFFICIAL WEBSITE
+        </section>
+        <br>
+        <section class="textfoot">
+            Made with love and <div class="html"><ion-icon name="logo-html5"></ion-icon></div>
+             at Asia Pacific University, Malaysia.
+        </section>
+        <section class="time">
+            Local time - <div id="time-display"></div>
+        </section>
+        <section class="copyright">
+            © 2024 APUBC'S OFFICIAL WEBSITE. ALL RIGHT RESERVED.
+        </section>
+        <section class="links">
+            <button class="buton" onclick="ins()"><span class="ins">Instagram</span><ion-icon class="arr" name="return-up-forward-outline"></ion-icon></button>
+            <button class="buton" onclick="apusite()"><span class="ap">APU's Site</span><ion-icon class="arr" name="return-up-forward-outline"></ion-icon></button>
+            <button class="buton" onclick="fb()"><span class="twi">Facebook</span><ion-icon class="arr" name="return-up-forward-outline"></ion-icon></button>
+            <button class="buton" onclick="email()"><span class="ema">Email</span><ion-icon class="arr" name="return-up-forward-outline"></ion-icon></button>
+        </section>
+    </footer>
+</section>
+
+<section>
+    <menu class="mini-menu-con">
+        <a class="mini-user">APUBC'S SITE</a>
+        <a class="mini-menu" onclick="toggleSubmenu()">EXPLORE</a>
+        <a class="mini-menu" href="index.html#about"><ion-icon name="radio-button-on-outline" class="radio"></ion-icon>ABOUT US</a>
+    </menu>
+</section>
+
+<section>
+    <button class="honor" onclick="news()">
+        <ion-icon name="megaphone-outline"></ion-icon>
+        <span style="transform: rotate(180deg);writing-mode: vertical-lr;margin-top: 90px;">News</span>
+    </button>
+</section>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.35.5/apexcharts.min.js"></script>
+<script src="script.js"></script>
+<script src="time.js"></script>
+<script src="minimenu.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+</body>
+</html>
+

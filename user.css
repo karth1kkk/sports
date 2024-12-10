@@ -1,0 +1,321 @@
+body {
+    background: #f5f5f5;
+    margin-top: 20px;
+}
+
+.ui-w-80 {
+    width : 80px !important;
+    height: auto;
+}
+
+.btn-default {
+    border-color: rgba(24, 28, 33, 0.1);
+    background  : rgba(0, 0, 0, 0);
+    color       : #4E5155;
+}
+
+label.btn {
+    margin-bottom: 0;
+}
+
+.btn-outline-primary {
+    border-color: #26B4FF;
+    background  : transparent;
+    color       : #26B4FF;
+}
+
+.btn {
+    cursor: pointer;
+}
+
+.text-light {
+    color: #babbbc !important;
+}
+
+.btn-facebook {
+    border-color: rgba(0, 0, 0, 0);
+    background  : #3B5998;
+    color       : #fff;
+}
+
+.btn-instagram {
+    border-color: rgba(0, 0, 0, 0);
+    background  : #000;
+    color       : #fff;
+}
+
+.card {
+    background-clip: padding-box;
+    box-shadow     : 0 1px 4px rgba(24, 28, 33, 0.012);
+}
+
+.row-bordered {
+    overflow: hidden;
+}
+
+.account-settings-fileinput {
+    position  : absolute;
+    visibility: hidden;
+    width     : 1px;
+    height    : 1px;
+    opacity   : 0;
+}
+
+.account-settings-links .list-group-item.active {
+    font-weight: bold !important;
+}
+
+html:not(.dark-style) .account-settings-links .list-group-item.active {
+    background: transparent !important;
+}
+
+.account-settings-multiselect~.select2-container {
+    width: 100% !important;
+}
+
+.light-style .account-settings-links .list-group-item {
+    padding     : 0.85rem 1.5rem;
+    border-color: rgba(24, 28, 33, 0.03) !important;
+}
+
+.light-style .account-settings-links .list-group-item.active {
+    color: #4e5155 !important;
+}
+
+.material-style .account-settings-links .list-group-item {
+    padding     : 0.85rem 1.5rem;
+    border-color: rgba(24, 28, 33, 0.03) !important;
+}
+
+.material-style .account-settings-links .list-group-item.active {
+    color: #4e5155 !important;
+}
+
+.dark-style .account-settings-links .list-group-item {
+    padding     : 0.85rem 1.5rem;
+    border-color: rgba(255, 255, 255, 0.03) !important;
+}
+
+.dark-style .account-settings-links .list-group-item.active {
+    color: #fff !important;
+}
+
+.light-style .account-settings-links .list-group-item.active {
+    color: #4E5155 !important;
+}
+
+.light-style .account-settings-links .list-group-item {
+    padding     : 0.85rem 1.5rem;
+    border-color: rgba(24, 28, 33, 0.03) !important;
+}
+
+
+.mini-menu{
+    margin: 20px;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: smaller;
+    font-weight: 400;
+    cursor: pointer; 
+  }
+  
+  .mini-user{
+   font-size: smaller;
+   font-weight: 400;
+   margin-right: 30px;
+  }
+  
+  
+  .menu-con{
+    align-items: center;
+    justify-content: center;
+    text-align: right;
+    margin-top: 17px;
+    margin-right: 40px;
+    background: linear-gradient(to bottom, #19191984, #f6f6f600);
+    margin-left: 20px;
+    padding: 14px;
+    border-radius: 10px;
+    z-index: 1;
+    box-sizing: border-box;
+    position: fixed;
+    width: 97%;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .userimg{
+    display: inline-flex;
+    width: 5%;
+    margin-right: 20px;
+    margin-left: 10px;
+    margin-top: -3px;
+    border-radius: 3px;
+  }
+  
+  .user{
+    text-align: start;
+    float: left;
+    display: inline-flex;
+    font-size: small;
+    margin-top: 3px;
+    cursor: pointer;
+    font-weight: 500;
+    text-decoration-line: none;
+    color: #ffffff;
+  }
+  
+  @media (max-width:900px){
+    
+    .userimg{
+        display: none;
+    }
+    }
+  
+  @keyframes RightToLeft {
+    from{
+        transform: translateX(0%);
+    }
+  
+    to{
+        transform: translateX(-50%);
+    }
+  }
+  
+  
+  @keyframes LeftToRight {
+    from{
+        transform: translateX(-50%);
+    }
+  
+    to{
+        transform: translateX(0%);
+    }
+  }
+  
+  
+  @keyframes DownToUp {
+    from{
+        opacity: 0%;
+    }
+  
+    to{
+        opacity: 100%;
+    }
+  }
+  
+  .menu{
+    margin: 20px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: small;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none;
+    color: #ffffff;
+  
+  }
+
+  .menu:hover{
+    margin: 20px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: small;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none;
+    color: #ffffff;
+  
+  }
+  
+  .user{
+    text-align: start;
+    float: left;
+    font-size: small;
+    margin-top: 3px;
+    cursor: pointer;
+    font-weight: 500;
+    text-decoration: none;
+    color: #ffffff;
+  }
+
+  .user:hover{
+    text-decoration: none;
+
+    color: #ffffff;
+  }
+  
+  
+  @media screen and (max-width: 1300px){
+    .menu-con{
+        width: 97%;
+    }
+  }
+  
+  @media screen and (max-width: 1200px){
+    .menu-con{
+        width: 96%;
+    }
+  }
+  
+  @media screen and (max-width: 1100px){
+    .menu-con{
+        width: 96%;
+    }
+  }
+  
+  @media screen and (max-width: 1000px){
+    .menu-con{
+        width: 95%;
+    }
+  }
+  
+  @media screen and (max-width: 900px){
+    .menu-con{
+        width: 95%;
+    }
+  }
+  
+  @media screen and (max-width: 800px){
+    .menu-con{
+        width: 94%;
+    }
+  }
+  
+  @media screen and (max-width: 700px){
+    .menu-con{
+        width: 93%;
+    }
+  }
+  
+  @media screen and (max-width: 600px){
+    .menu-con{
+        width: 93%;
+    }
+  }
+  
+  @media screen and (max-width: 500px){
+    .menu-con{
+        width: 92%;
+    }
+  }
+  
+  .sub{
+    cursor: pointer;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: medium;
+  }
+  
+  .submenu {
+    border-radius: 10px;
+    display: none;
+    padding: 20px;
+    top:50px;
+    position: absolute;
+    right:20px;
+    background-color: rgba(19, 19, 19, 0.314);
+    z-index: 9999999;
+  }
+  
+  
+    
